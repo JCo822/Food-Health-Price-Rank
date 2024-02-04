@@ -1,5 +1,7 @@
+//Search button listener
 document.querySelector('button').addEventListener('click', apiRequest)
 
+//Sending GET request to server and defining with what to respond
 async function apiRequest(){
     const nutrientType = document.querySelector('input').value
     try{
@@ -12,3 +14,5 @@ async function apiRequest(){
         console.log(error)
     }
 }
+
+const item = document.querySelectorAll('.item span')
